@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branzo Towing</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+
+<header>
+    <div id="hero">
+        <img id="logo" src="sc2.png" alt="Branzo Towing Logo">
+        <!-- <img id="head" src="h-img.png" alt="Towing service banner">-->
+        <video src="intro2.mp4" autoplay loop muted></video>
+        <h1>BRENZO TOWING</h1>
+    </div>
+    
+</header>
+
+<nav id="navigation">
+    <a href="#Home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="#About">About Us</a>
+</nav>
+
+<main>
+    <section id="content" >
+        <h2 >Home</h2>
+        <div class="col" id="Home">
+            <p >
+            Welcome to Branzo Towing – your trusted partner for round-the-clock towing and roadside assistance.
+            We provide fast, reliable 24/7 towing services for individuals, businesses, and fleet operators. With a strong commitment to safety, professionalism, and customer care, we’re always ready to assist — anytime, anywhere.
+            <br><br>
+            Whether you’re dealing with a breakdown, accident, or unexpected roadside issue, Branzo Towing is just one call away.
+            Experience dependable service from a team that truly cares.
+            <br><br>
+            Learn more <a href="#About">About Us</a>
+            </p>
+        </div>
+
+        <div class="col">
+            <img id="soon" src="coming.png" alt="Towing vehicle">
+        </div>
+    </section>
+
+    <section id="register">
+  <div class="form-container">
+
+    <!-- SIGN IN FORM -->
+    <form id="signinForm" class="form-section" method="post" action="login.php">
+  <div class="input-box">
+      <label>Email</label>
+      <input type="email" name="email" placeholder="Enter your email" required>
+  </div>
+  <div class="input-box">
+      <label>Password</label>
+      <input type="password" name="password" placeholder="Enter your password" required>
+  </div>
+  <button type="submit" class="submit-btn">Sign In</button>
+
+        <p class="form-link">
+            Don't have an account?
+            <a href="" id="goToRegister">Register here</a>
+        </p>
+    </form>
+
+    <!-- REGISTER FORM -->
+    <form id="registerForm" class="form-section hidden" method="post" action="register.php">
+  <!-- name field must have name="fullname" to match PHP -->
+  <div class="input-box">
+      <label>Full Name</label>
+      <input type="text" name="fullname" placeholder="Your full name" required>
+  </div>
+  <div class="input-box">
+      <label>Email</label>
+      <input type="email" name="email" placeholder="Enter your email" required>
+  </div>
+  <div class="input-box">
+      <label>Password</label>
+      <input type="password" name="password" placeholder="Create a password" required>
+  </div>
+  <button type="submit" class="submit-btn">Register</button>
+</form>
+
+</div>
+
+</section>
+
+<section id="animation"> 
+    <div id="car">
+        <img src="truck.jpg" alt="" id="moving-car">
+    </div>
+</section>
+
+    <div id="cont">
+
+        <section id="area">
+           <h2 id="services">Services</h2>
+            <p>
+              At Branzo Towing, we deliver fast, reliable, and professional towing solutions designed to meet your needs anytime — day or night. Our skilled team is equipped to handle a wide range of roadside situations with care and expertise.
+                <br><br>
+                🚗 24/7 Emergency Towing
+
+                Count on us for quick response and dependable towing anytime you need help.
+                <br><br>
+
+                🔧 Roadside Assistance
+
+                We provide battery jump-starts, tire changes, fuel delivery, and lockout help when you're stuck on the road.
+                <br><br>
+
+                🚙 Long-Distance Towing
+
+                Safe, secure, and affordable long-distance transport for your vehicle.
+                <br><br>
+
+                🏘️ Private Property Towing
+
+                Professional assistance for property owners dealing with unauthorized or illegally parked vehicles.
+                <br><br>
+
+                🚚 Vehicle Recovery
+
+                Specialized recovery services for breakdowns, accidents, and off-road situations.
+                <br><br>
+
+                🛞 Flatbed Towing
+
+                Perfect for luxury, low-profile, or damaged vehicles requiring extra care.
+
+            <div id="siv">
+                <img id="steve" src="w1.jpg" alt="Steve image">
+            </div>
+        </section>
+
+       </div>
+            
+    <section id="why-branzo" class="why-section">
+    <h2>Why Branzo?</h2>
+
+    <p class="intro-text">
+        Choosing <strong>Branzo Towing</strong> means choosing reliability, speed, and genuine care.
+        We provide more than towing — we deliver peace of mind when it matters most.
+    </p>
+
+    <div class="why-grid">
+
+        <div class="why-item">
+            <h3>✔ Always Available</h3>
+            <p>Our team is ready 24/7 — day or night, weekends or holidays.</p>
+        </div>
+
+        <div class="why-item">
+            <h3>✔ Fast Response Times</h3>
+            <p>We dispatch quickly to get you the help you need without delays.</p>
+        </div>
+
+        <div class="why-item">
+            <h3>✔ Professional & Experienced</h3>
+            <p>Certified operators handle every vehicle with skill and care.</p>
+        </div>
+
+        <div class="why-item">
+            <h3>✔ Transparent Pricing</h3>
+            <p>Fair, honest prices with no hidden fees — ever.</p>
+        </div>
+
+        <div class="why-item">
+            <h3>✔ Modern Equipment</h3>
+            <p>Our fleet is well-maintained for safe and efficient towing.</p>
+        </div>
+
+</section>
+
+        </div>
+    </div>
+
+    <section id="form-section">
+        <h2 id="contact">Request Towing / Roadside Assistance</h2>
+
+       <form id="serviceForm" method="post" action="service_request.php">
+        <!-- Customer Info -->
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="email">Email (optional)</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+
+        <!-- Vehicle Info -->
+        <label for="vehicle">Vehicle Type</label>
+       <select id="vehicle" name="vehicle" required>
+            <option value="">Select vehicle type</option>
+            <option value="car">Car</option>
+            <option value="truck">Truck</option>
+            <option value="motorcycle">Motorcycle</option>
+            <option value="van">Van</option>
+        </select>
+
+        <label for="license">License Plate / Vehicle ID</label>
+        <input type="text" id="license" name="license" placeholder="Enter license plate or vehicle ID">
+
+        <!-- Service Info -->
+        <label for="service">Service Required</label>
+         <select id="service" name="service" required>
+            <option value="">Select service</option>
+            <option value="emergency-tow">Emergency Towing</option>
+            <option value="roadside-assistance">Roadside Assistance</option>
+            <option value="long-distance-tow">Long-Distance Towing</option>
+            <option value="flatbed-tow">Flatbed Towing</option>
+            <option value="vehicle-recovery">Vehicle Recovery</option>
+        </select>
+
+        <label for="location">Current Location / Pickup Address</label>
+        <input type="text" id="location" name="location" placeholder="Enter your address or location" required>
+
+        <label for="urgency">Urgency</label>
+        <select id="urgency" name="urgency" required>
+            <option value="">Select urgency</option>
+            <option value="immediate">Immediate / Emergency</option>
+            <option value="within-hour">Within an hour</option>
+            <option value="same-day">Same day</option>
+            <option value="schedule">Schedule for later</option>
+        </select>
+
+        <label for="message">Additional Details / Instructions</label>
+        <textarea id="message" name="message" placeholder="Provide any extra info..." rows="4"></textarea>
+
+        <button type="submit">Request Service</button>
+    </form>
+    </section>
+
+    <section id="info">
+        <h2 id="About">
+            About Us
+        </h2>
+        <p>
+At Branzo Towing, we are committed to providing fast, reliable, and professional towing and roadside assistance services anytime you need them — day or night. With years of experience serving individuals, businesses, and fleet operators, our team prioritizes safety, efficiency, and customer satisfaction above all else.
+<br><br>
+From emergency towing and roadside assistance to long-distance transport and vehicle recovery, we handle every situation with care and expertise. Our mission is simple: to get you and your vehicle back on the road safely, quickly, and with peace of mind.
+<br><br>
+Choose Branzo Towing — your trusted partner on every journey
+        </p>
+    </section>
+</main>
+
+<footer id="footer">
+    <div class="footer-content">
+
+        <img id="footerImg" src="sc2.png" alt="Branzo Towing Logo">
+
+        <p class="footer-title">© 2025 Branzo Towing | All Rights Reserved</p>
+
+        <div class="socials">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            <a href="tel:0123456789" class="call">
+                <ion-icon name="call"></ion-icon> 0123456789
+            </a>
+        </div>
+
+        <button id="backToTop">
+            <ion-icon name="arrow-up-circle-outline"></ion-icon>
+        </button>
+
+    </div>
+</footer>
+
+
+<!-- LIBRARIES -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.ui.min.js"></script>
+
+<!-- MAIN JS -->
+<script src="logic.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
